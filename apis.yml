@@ -1,7 +1,24 @@
 aid: olev
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/olev.png
 name: Olev
 description: Olev is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+  network as a stub for enrichment. As of the 2026-07-20 enrichment pass the primary domain
+  olev.com.tr issues a 301 redirect to ruut.tech, indicating the company has rebranded to Ruut; the live
+  site is a minimal single-page app with no server-rendered product copy. No public developer, API,
+  documentation, pricing, or blog surface was found (api.* and developer.* subdomains do not resolve and
+  /api, /docs, /developers, /pricing, /blog all return 404). This remains a company profile stub with no
+  discoverable API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/olev/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,7 +28,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -20,6 +37,13 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/olev-domain-security.yml
 - type: Website
   url: https://olev.com.tr
