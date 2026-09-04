@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://olev.com.tr', status: 301, note: 'declared website redirects to https://ruut.tech/ — a different registrable domain (olev.com.tr -> ruut.tech), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/olev.png
 name: Olev
 description: Olev is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
